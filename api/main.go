@@ -53,12 +53,12 @@ func main()  {
 
 	// Define the /hello endpoint
 	r.GET("/blueprint", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, World Emmanuel!")
+		c.String(http.StatusOK, "Hello, World Emmanuel! well")
 	})
 
 	// Define the /hello endpoint
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Welcome to Base")
+		c.String(http.StatusOK, "Health Checks")
 	})
 
 	// Start the server on port 8080
