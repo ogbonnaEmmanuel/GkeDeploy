@@ -52,7 +52,7 @@ func main()  {
 	r := gin.Default()
 
 	// Define the /hello endpoint
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/blueprint", func(c *gin.Context) {
 		c.String(http.StatusOK, "Hello, World Emmanuel!")
 	})
 
