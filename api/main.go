@@ -56,6 +56,11 @@ func main()  {
 		c.String(http.StatusOK, "Hello, World Emmanuel!")
 	})
 
+	// Define the /hello endpoint
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "Welcome to Base")
+	})
+
 	// Start the server on port 8080
 	if err := r.Run(":8080"); err != nil {
 		log.Fatalf("Failed to run server: %v", err)
